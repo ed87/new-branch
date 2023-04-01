@@ -1,0 +1,39 @@
+html{
+    font-size: 18px;
+}
+body{
+    font-size: 1rem;
+}
+h1{
+    font-size: 2.78rem;
+    color: #ffffff;
+}
+h2{
+    font-size: 1.67rem;
+}
+#first-part{
+    background-color: #212121;
+    opacity: 50%;
+}
+#artjunks{
+    color: #ffffff;
+}
+#content{
+    color: #ffffff;
+}
+#button{
+    background-color: #212121;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+
+
+@media screen and (min-width: 576px){
+    
+}
+
+@media screen and (min-width: 768px){
+    
+}
