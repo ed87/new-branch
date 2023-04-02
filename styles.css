@@ -1,11 +1,11 @@
 html{
     font-size: 18px;
 }
-/* body{
+body{
     font-size: 1rem;
-    max-width: 360px;
+    /* max-width: 360px; */
     margin: 0 auto;
-} */
+}
 h1{
     font-size: 2.78rem;
     color: #ffffff;
@@ -24,8 +24,8 @@ h2{
     background-color: #212121;
     opacity: 50%;
     height: 57rem;
-    /* padding-left: 1.78rem;
-    padding-right: 1.6rem; */
+    padding-left: 1.78rem;
+    padding-right: 1.6rem;
 }
 #artjunks{
     font-family: 'Inter', sans-serif;
@@ -37,6 +37,14 @@ h2{
 }
 #desktop-contents{
     display: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22rem;
+    color: #FFFFFF;
+    flex: none;
+    order: 5;
+    flex-grow: 0;
 }
 #content{
     color: #ffffff;
@@ -47,8 +55,8 @@ h2{
     flex: none;
     order: 2;
     flex-grow: 0;
-    /* margin-top: 1.78rem;
-    margin-bottom: 1.78rem; */
+    margin-top: 1.78rem;
+    margin-bottom: 1.78rem;
 
 }
 #button{
@@ -73,13 +81,13 @@ h2{
     flex: none;
     order: 0;
     flex-grow: 0;
-    /* margin-bottom: 1.78rem; */
+    margin-bottom: 1.78rem;
 }
 #artjunks-and-hamburger{
     display: flex;
-    /* padding-top: 1.78rem; */
+    padding-top: 1.78rem;
     flex-direction: row;
-    /* padding-bottom: 12rem; */
+    padding-bottom: 12rem;
     justify-content: space-between;
 }
 #newest-reads{
@@ -88,10 +96,9 @@ h2{
     font-size: 1.33rem;
     line-height: 1.6rem;
     color: #000000;
-    /* padding-top: 4.33rem ;
+    padding-top: 4.33rem ;
     padding-bottom: 4.33rem ;
-    padding-left: 1.78rem; */
-
+    padding-left: 1.78rem;
 }
 .date{
     font-family: 'Inter', sans-serif;
@@ -118,12 +125,12 @@ h2{
 .date-and-description{
     box-sizing: border-box;
     border: 1px solid #DDDDDD;
-    /* padding: 1.78rem; */
-    /* width: 17.3rem; */
-    /* border-bottom-left-radius: 0;
+    padding: 1.78rem;
+    width: 17.3rem;
+    border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px; */
+    border-bottom-right-radius: 4px;
 }
 #get-started-btn{
     border: 2px solid #FFFFFF;
@@ -131,49 +138,20 @@ h2{
     background: #212121;
     color: #FFFFFF;
 }
-#get-started-btn{
-    display: none;
-}
 
-/* .second-part-subsection{
+.second-part-subsection{
     padding: 0 1.78rem;
     margin-bottom: 1.78rem;
-} */
+}
 .image{
-    object-fit: cover;
-    /* width: 17.3rem; */
-    border-radius: 4px;
+width: 17.3rem;
+border-radius: 4px;
 
 }
 
-
-@media only screen and (min-width: 576px){
-    /* body{
-        max-width: 720px;
-    } */
-    #second-part-container{
-        display: flex;
-        flex-direction: row;
-        /* width: calc((100% - 40px - 144px)/3); */
-        /* justify-content: space-between; */
-    }
-    /* .second-part-subsection{
-    } */
-}
-
-@media only screen and (min-width: 768px){
-    /* body{
-        max-width: 960px;
-    } */
-    #hamburger{
-        display: none;
-    }
+@media screen and (min-width: 576px) {
     #desktop-contents{
         display: flex;
-        flex-direction: row;
-        color:#FFFFFF;
-    }
-    #get-started-btn{
-        display: flex;
     }
 }
+    
