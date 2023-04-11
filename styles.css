@@ -18,11 +18,12 @@ h1{
 h2{
     font-size: 1.67rem;
 }
-#body{
+/* #body{
     max-width: 375px;
     margin: 0 auto;
     padding-bottom: 61px;
-}
+} */
+
 #first-part{
     background-color: #212121;
     background-image: url(mobile-background.svg);
@@ -30,6 +31,7 @@ h2{
     height: 57rem;
     padding-left: 1.78rem;
     padding-right: 1.6rem;
+    width: 100%;
 }
 #artjunks{
     font-family: 'Inter', sans-serif;
@@ -57,7 +59,6 @@ h2{
     font-size: 1rem;
     line-height: 1.67rem;
     flex: none;
-    order: 2;
     flex-grow: 0;
     margin-top: 1.78rem;
     margin-bottom: 1.78rem;
@@ -82,7 +83,6 @@ h2{
     width: 5rem;
     height: 0.8px;
     flex: none;
-    order: 0;
     flex-grow: 0;
     margin-bottom: 1.78rem;
 }
@@ -182,14 +182,13 @@ object-fit: cover;
     font-size: 1rem;
     color: #FFFFFF;
     flex: none;
-    order: 0;
     flex-grow: 0;
 }
 
 @media screen and (min-width: 576px) {
-    #body{
+    /* #body{
         max-width: 744px;
-    }
+    } */
     #first-part{
         background-image: url(tablet-background.svg);
     }
@@ -231,9 +230,9 @@ object-fit: cover;
         display: flex;
     }
     
-    #body{
+    /* #body{
         max-width: 1440px;
-    }
+    } */
     #hamburger{
         display: none;
     }
