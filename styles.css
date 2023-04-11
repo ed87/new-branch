@@ -3,6 +3,7 @@ html{
 }
 body{
     font-size: 1rem;
+    margin: 0;
 }
 h1{
     font-size: 2.78rem;
@@ -233,6 +234,8 @@ object-fit: cover;
     
     #body{
         max-width: 1440px;
+        padding: 0;
+        margin: 0;
     }
     #hamburger{
         display: none;
