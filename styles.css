@@ -3,6 +3,9 @@ html{
 }
 body{
     font-size: 1rem;
+    margin: 0;
+    /* max-width: 100%;
+    overflow-x: hidden; */
 }
 h1{
     font-size: 2.78rem;
@@ -27,11 +30,12 @@ h2{
 #first-part{
     background-color: #212121;
     background-image: url(mobile-background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
     opacity: 50%;
     height: 57rem;
     padding-left: 1.78rem;
     padding-right: 1.6rem;
-    width: 100%;
 }
 #artjunks{
     font-family: 'Inter', sans-serif;
@@ -48,9 +52,6 @@ h2{
     font-size: 1rem;
     line-height: 1.22rem;
     color: #FFFFFF;
-    flex: none;
-    order: 5;
-    flex-grow: 0;
 }
 #content{
     color: #ffffff;
@@ -68,11 +69,11 @@ h2{
     color: #ffffff;
     border: 2px solid white;
     border-radius: 10px;
-    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.22rem;
+    background-color: transparent;
 }
 #hamburger{
     color: #ffffff;
@@ -137,23 +138,22 @@ margin-bottom: 50px;
     margin-bottom: 48px;
     }
 .date-and-description{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     border: 1px solid #DDDDDD;
     padding: 1.78rem;
-    width: 17.3rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    padding-bottom: 1.6rem;
+    /* padding-bottom: 1.6rem; */
+    /* width: 100%; */
 }
 #get-started-btn{
     border: 2px solid #FFFFFF;
     border-radius: 10px;
-    background-image: url(mobile-background.svg);
+    /* background-image: url(mobile-background.svg); */
+    background-color: transparent;
     color: #FFFFFF;
-    margin-left: 2rem;
-    width: 100px;
     height: 25px;
     align-self: center;
 }
@@ -167,28 +167,31 @@ margin-bottom: 50px;
     padding-left: 1.78rem;
     padding-right: 1.78rem;
 }
+.second-part-subsection{
+    width: 100%;
+}
 .image{
-width: 17.3rem;
 border-radius: 4px;
+width: 100%;
 object-fit: cover;
+align-self: flex-start;
 }
 .navbar{
-    margin-right: 1.9rem;
-    align-self: center;
-    width: 2.5rem;
+    /* align-self: center; */
     height: 1.22rem;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 1rem;
     color: #FFFFFF;
-    flex: none;
-    flex-grow: 0;
+    /* margin-right: 2%; */
 }
+/* .navbar:not(:last-child){
+    margin-right: 2%;
+} */
+
 
 @media screen and (min-width: 576px) {
-    /* #body{
-        max-width: 744px;
-    } */
+   
     #first-part{
         background-image: url(tablet-background.svg);
     }
@@ -201,24 +204,30 @@ object-fit: cover;
         flex-direction: row;
         gap: 20px;
     }
+   .desc-and-read-more{
+    display: flex;
+    justify-content: flex-end;
+   }
+    .read-more{
+        align-self: flex-end;
+    }
     h1{
         font-size: 3.8rem;
         line-height: 4.8rem;
     }
     
-    .image{
+    /* .image{
         width: 9.5rem;
         height: 20rem;
-    }
+    } */
     .date-and-description{
-        width: 9.5rem;
         height: 16rem;
     }
     
-    #newest-reads{
+    /* #newest-reads{
         padding-bottom: 3.11rem ;
         padding-top: 4rem;
-    }
+    } */
     .description{
         font-size: 0.8rem;
         line-height: 1rem;
@@ -228,8 +237,20 @@ object-fit: cover;
 @media screen and (min-width: 768px){
     #desktop-contents{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
     }
-    
+    #artjunks{
+        width: 30%;
+    }
+    #artjunks-and-hamburger{
+        display: flex;
+        padding-top: 1.78rem;
+        flex-direction: row;
+        padding-bottom: 12rem;
+        /* justify-content: space-between; */
+    }
     /* #body{
         max-width: 1440px;
     } */
@@ -244,16 +265,15 @@ object-fit: cover;
         line-height: 5.5rem;
     }
    
-    .image{
+    /* .image{
         width: 19.5rem;
-    }
-    .date-and-description{
-        width: 19.5rem;
+    } */
+    /* .date-and-description{
         height: 18rem;
-    }
-    #newest-reads{
+    } */
+    /* #newest-reads{
         padding-bottom: 2.44rem ;
-    }
+    } */
     .description{
         font-size: 1.38rem;
         line-height: 1.67rem;
